@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* 자식 셀렉터 */
+        div>img {
+            width: 200px;
+        }
+
+        a>img {
+            width: 500px;
+        }
+        /* 자손 셀렉터 */
+        div img {
+            border: 7px solid blue;
+        }
+
+        div span {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div><img src="../html/강아지.jpeg" alt="">
+        <a href="">
+            <img src="../html/강아지.jpeg" alt=""></a>
+    </div>
+
+    <div>
+        <span>Lorem, ipsum dolor.</span>
+        <h1>Lorem, ipsum dolor. <span>lorem1</span></h1>
+    </div>
+
+    
+</body>
+
+</html>
