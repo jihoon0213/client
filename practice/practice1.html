@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            text-align: center;
+            background-color: rgb(28, 101, 238);
+            width: 140px;
+            height: 50px;
+            margin: 50% auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 16px;
+            border: 8px solid black;
+            border-radius: 20px;
+            padding-left: 10px;
+        }
+        #a:hover{
+            background-color: skyblue;
+        }
+        #a:active{
+            background-color: yellow;
+        }
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 40px solid black; /* 화살표의 색과 크기 */
+            border-right: 40px solid black; /* 화살표의 색과 크기 */
+            margin-right: 10px; /* 화살표와 텍스트 사이 간격 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="a">
+            <a href="http://github.com/jihoon0213">github/jihoon0213</a>
+        </div>
+    </div>
+
+    <div class="arrow-right"></div> <!-- 오른쪽 화살표 -->
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* id > 다중class > class(pseudo) > element */
+        h1 {
+            background-color: skyblue;
+        }
+        .head{
+            background-color: beige;
+        }
+        /* 같은 클래스를 쓰더라고 여러개가 우선순위가 높음음 */
+        .head.note{
+            background-color: yellow;
+        }
+        #header1{
+            background-color: blue;
+        }
+        .head.note:hover{
+            background-color: orange;
+        }
+        #header1.head{
+            background-color: gold;
+        }
+        /* 같은 점수면 밑에 있는 요소가 우선순위가 높음 */
+        .head{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem.</h1>
+    <h1 class="head">Deleniti.</h1>
+    <h1 class="head note">Aspernatur!</h1>
+    <h1 class="head note" id="header1">Non.</h1>
+    <h1>Vero?</h1>
+    <h1>Quisquam.</h1>
+    <h1>Quidem.</h1>
+    <h1>Vitae.</h1>
+    <h1>Voluptas.</h1>
+    <h1>Neque.</h1>
+</body>
+
+</html>
