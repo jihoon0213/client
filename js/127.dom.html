@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id, class, tagName -->
+     <h1>Lorem.</h1>
+     <p>Lorem, ipsum dolor.</p>
+     <h3>Lorem, ipsum.</h3>
+     <h1>Dolorem?</h1>
+     <p>Deserunt, ad vero.</p>
+     <h3>Non, error!</h3>
+     <h1>Itaque.</h1>
+     <p>Voluptas, labore repellat?</p>
+     <h3>Deserunt, eos.</h3>
+
+     <script>
+        // getElementsByTagName : tag명으로 선택된 요소들을 리턴
+        let a = document.getElementsByTagName("h1");
+        for( let i = 0; i < a.length; i++){
+            console.log(a[i]);
+        }
+
+        // 연습 p 요소들을 선택해서 모두 탐색 출력
+        // 연습 h3 요소들을 선택해서 모두 탐색 출력
+
+        let b = document.getElementsByTagName("p");
+        for (let i = 0; i < b.length; i++) {
+            console.log(b[i]);
+        
+        }
+        let c = document.getElementsByTagName("h3");
+        for (let i = 0; i < b.length; i++) {
+            console.log(c[i]);
+        }
+
+        
+
+
+     </script>
+</body>
+</html>

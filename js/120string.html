@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // indexOf : 특정 문자열의 위치(index) 리턴, 없으면 -1리턴
+
+        let a = "I'm Donald Trump"
+        let b = a.indexOf("Donald");
+        console.log(b);
+        console.log(a.indexOf("Trump"));
+        console.log(a.indexOf("m"));
+        console.log(a.indexOf(" "));
+        console.log(a.indexOf("'"));
+        console.log(a.indexOf("Donald"));
+
+
+        // 두번째 파라미터로 검색시작위치를 지정할 수 있음음
+        console.log(b);
+        console.log(a.indexOf("Trump", 0));
+        console.log(a.indexOf("m", 3));
+        console.log(a.indexOf(" ", 0));
+        console.log(a.indexOf("'", 0));
+        console.log(a.indexOf("Donald"));
+
+
+        let c = "Donald said that Donald told Donald to remind Donald that Donald was late";
+        
+        console.log(c.indexOf("Donald"));
+        console.log(c.indexOf("Donald",1));
+        console.log(c.indexOf("Donald",18));
+        console.log(c.indexOf("Donald",30));
+        console.log(c.indexOf("Donald",47));
+        console.log(c.indexOf("Donald",59));
+
+        let i = c.indexOf("Donald");
+
+        while (i !== -1) {
+            console.log(i);
+            i = c.indexOf("Donald", i+1);
+        }
+        
+        
+        
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // substring(slice, substr) : 시작위치(index)와 종료위치(index)로 부분 문자열을 추출해서 리턴
+
+
+        let a = "javascript";
+        let b = a.substring(0, 4);
+        console.log(b);
+        console.log(a.substring(4, 7));
+
+        console.log(a.substring(4));
+        console.log(a.substring(4, 10));
+
+        let c = ["java,spring,boot", "python,django,ai", "javascript,node,next", "html,react,vue", "jsp,servlet,thymeleaf"];
+
+        let d = c.map((e) => {
+            // 첫번째 콤마위치
+            let firstComma = e.indexOf(",");
+            // 두번째 콤마위치
+            let secondComma = e.indexOf(",", firstComma + 1);
+            // 두 콤마사이의 문자열 추출
+            let secondWord = e.substring(firstComma + 1, secondComma);
+            // 리턴
+            return secondComma;
+        })
+
+
+        console.log(d);
+
+
+
+
+    </script>
+</body>
+
+</html>

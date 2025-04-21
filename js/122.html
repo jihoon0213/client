@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // split : 특정 문자열을 기준으로 문자열들을 원소로 갖는 배열 리턴
+
+        let a = "spring,java,boot,css,react";
+        let b = a.split(",");
+        console.log(b);
+        let c = "spring, java, boot, css, react";
+        let d = c.split(",");
+        console.log(d);
+        let e = c.split(", ");
+        console.log(e);
+
+        let f = "spring , java, boot ,css,react";
+        console.log(f);
+        let g = f.split(/\s*,\s*/); // regular expression(정규표현식)
+        console.log(g);
+
+        let j = [
+            "java,spring,boot",
+            "python,django,ai",
+            "javascript,node,next",
+            "html,react,vue",
+            "jsp,servlet,thymeleaf"
+        ];
+
+        let k = j.map(e=> e.split(",")[1]);
+        console.log(k);
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head1" class="note">Lorem.</h1>
+    <h1 id="head2" class="high">Labore.</h1>
+    <h1 id="head3" class="note low high">Sit!</h1>
+    <h1 id="head4" class="high">Quia?</h1>
+    <h1 id="head5" class="note low mid">Molestias.</h1>
+
+    <script>
+
+        let a = document.getElementById("head1");
+        console.log(a);
+
+        // getElementsByClassName : 특정 클래스에 속한 요소들을 리턴
+        let b = document.getElementsByClassName("note");
+        console.log(b.length);
+        console.log(b[0]);
+        console.log(b[1]);
+        console.log(b[2]);
+
+        console.log("--- for 문으로 전체 탐색");
+        let c = document.getElementsByClassName("high");
+        for (let i = 0; i < c.length; i++) {
+            console.log(c[i]);
+        }
+
+        console.log("--- low 클래스를 가진 요소들을 전체 탐색");
+
+        let d = document.getElementsByClassName("low");
+        for (let i = 0; i < d.length; i++) {
+            console.log(d[i]);
+            
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

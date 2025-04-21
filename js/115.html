@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 자료형(data type)
+        // number, string, object(array, function),undefined
+
+        // js에서 모두 다 object임
+
+        // string 도 property와 method가 있음
+        let a = "hello";
+        let b = "hi";
+        let c = "java";
+
+        // string length property
+        // 문자열의 길이
+        console.log(a.length);
+        console.log(b.length);
+        console.log(c.length);
+
+        let d = ["java", "js", "a", "css", "spring"]
+
+        // string length property
+        // array sort method
+        // 를 활용해서 길이 순 정렬 되도록 코드 작성
+
+        let e = d.sort((a,b) => a.length - b.length);
+
+        console.log(e);
+
+
+    </script>
+</body>
+
+</html>

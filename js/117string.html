@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // trim : 앞뒤 공백 제거한 새 문자열 리턴
+
+        let a = "   java";
+        console.log(a);
+        let b = a.trim();
+        console.log(b);
+
+        let c = "java   "
+        let d = c.trim();
+        console.log(d);
+
+        let e = "    java    "
+        let f = e.trim();
+        console.log(f);
+
+        let g = "  j a   v a  "
+        let h = g.trim();
+        console.log(h);
+
+        let i = "  spring  ";
+
+        let j = i.trim();
+        console.log(j.charAt(j.length - 1));
+
+        let k = [" css ","   js  ","   spring  ","  java","  spl   "];
+        
+        console.log(k);
+        let l = k.map(e => e.trim());
+        l.sort();
+        console.log(l);
+        
+        
+
+
+
+
+    </script>
+</body>
+
+</html>

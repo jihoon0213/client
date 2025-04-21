@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Necessitatibus.</h1>
+    <h1 id="head3">Vitae!</h1>
+    <h1 id="head4">Repudiandae.</h1>
+    <h1 id="head5">Nisi!</h1>
+
+    <script>
+        //  dom에서 id로 element 찾기
+        // document의 getElementById : 특정 아이디로 element 객체를 리턴
+        let a = document.getElementById("head1");
+        let b = document.getElementById("head2");
+        console.log(a);
+        console.log(b);
+
+        console.log(document.getElementById("head3"));
+
+        a.innerText = "hello dom";
+        b.innerText = "hi object";
+
+        // 연습
+        // 아이디가 head5인 요소를 찾아서 출력
+        // 아이디가 head5인 요소의 텍스트를 "hello javascript"로 변경
+
+        console.log(document.getElementById("head5"));
+        document.getElementById("head5").innerText = "hello javascript";
+
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

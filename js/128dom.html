@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head1" class="top">Lorem.</h1>
+    <p id="para1" class="top mid">Lorem, ipsum dolor.</p>
+    <h1 id="head2" class="mid">Odit?</h1>
+    <p id="para2" class="mid bottom">Veritatis, beatae sint!</p>
+    <h1 id="head3" class="bottom">Magnam?</h1>
+    <p id="para3" class="top">Alias, repudiandae doloremque!</p>
+    <script>
+        // getElementById("아이디")
+        // getElementsByClassName("클래스")
+        // getElementsByTagName("태그명")
+
+
+        // querySelector("선택자") : 선택된 한개 요소만 리턴
+        // querySelectorAll("선택자") : 선택된 여러 요소를 리턴(배열)
+        let a = document.querySelector("#head1");
+        console.log(a);
+        let b = document.querySelector("#para2");
+        console.log(b);
+        let c = document.querySelector(".mid");
+        console.log(c);
+
+        let d = document.querySelectorAll(".mid");
+        console.log(d[0]);
+        console.log(d[1]);
+        console.log(d[2]);
+        console.log("for문 활용");
+        for (let i = 0; i < d.length; i++) {
+            console.log(d[i]);
+        }
+
+        let e = document.querySelectorAll("p.mid");
+        for (let i = 0; i < e.length; i++) {
+            console.log(e[i]);
+        }
+        
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
