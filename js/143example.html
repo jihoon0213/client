@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input#input1+h3#head1 -->
+    <input type="text" id="input1">
+    <h3 id="head1"></h3>
+
+    <script>
+        document.querySelector("#input1").addEventListener("keyup",function(){
+            let v =document.querySelector("#input1").value;
+            document.querySelector("#headl").textContent = v;
+            
+        });
+    </script>
+</body>
+</html>

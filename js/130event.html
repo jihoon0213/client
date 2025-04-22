@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1, p {
+            background-color: beige;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="head1">Lorem.</h1>
+    <p id="para1">Lorem, ipsum dolor.
+        <br><p>Lorem.</p>
+    </p>
+    <button id="btn1">클릭</button>
+
+    <script>
+        // event : 요소의 이벤트가 발생했을 때 실행되는 코드 또는 순간
+        
+        let a = document.querySelector("#head1");
+        let b = document.querySelector("#para1");
+        let c = document.querySelector("#btn1");
+
+        a.onclick = function () {
+            console.log("어떤 함수");
+            
+        };
+
+        
+
+        c.oncontextmenu = () => console.log("hi");
+
+        b.onmouseover = () => console.log('들어옴');
+        b.onmouseout = () => console.log('나감');
+
+        a.ondblclick = () => console.log('더블클릭');
+
+
+
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>

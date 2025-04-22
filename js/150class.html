@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para1" class="note error special dark">Lorem.</p>
+    <button id="btn">toggle</button>
+    <script>
+        let a = document.querySelector("#para1").className;
+        console.log(a);
+
+
+        let b = a.includes("error");
+        console.log(b);
+
+        let c = a.split(" ");
+        for (let i = 0; i < c.length; i++) {
+            if (c[i] === "heroor") {
+                console.log("있다")
+                
+            }
+            
+        
+        }
+        // 
+        let d = document.querySelector("#para1").classList;
+
+        // 해당 클래스가 있는지?
+        console.log(d.contains("error"));
+        console.log(d.contains("herror"));
+
+        
+        // 클래스 추가하기
+        d.add("react");
+        // 클래스 삭제하기
+        d.remove("dark");
+
+        // 클래스 toggle
+        document.querySelector("#btn").addEventListener("click",function(){
+            let l = document.querySelector("#para1").classList;
+            l.toggle("light");
+        })
+
+    </script>
+</body>
+
+</html>

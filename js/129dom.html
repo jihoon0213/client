@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            <h1>Lorem.</h1>
+            <p>Lorem, ipsum, Lorem.</p>
+        </div>
+    </div>
+
+    <div id="box3">
+        <div id="box4">
+            <h1>Lorem.</h1>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+
+    <script>
+        let a = document.querySelector("h1");
+        console.log(a);
+
+        let b= document.querySelectorAll("h1");
+        console.log(b[1]);
+
+        let c = document.querySelector("#box4");
+        console.log(c);
+        let d = a.parentElement;
+        console.log(d);
+        
+
+        console.log(b[1].parentElement);
+        console.log(b[1].parentElement.parentElement);
+
+        console.log(a.nextElementSibling);
+
+        let e = a.nextElementSibling;
+
+        console.log(e.previousElementSibling);
+
+
+        console.log(b[1].nextElementSibling);
+        
+        let f = document.querySelector("#box2");
+        let g = f.children;
+        console.log(g[0]);
+        console.log(g[1]);
+
+        
+
+        // 자식 요소 찾기
+        let h = document.querySelector("#box3");
+        
+        // box3 손자로 있는 h1, p 요소 찾아서 출력
+        console.log(h.children[0].children[0]);
+        console.log(h.children[0].children[1]);
+
+        h.onmouseover = () => console.log('진입');
+        
+        
+        
+    </script>
+</body>
+</html>

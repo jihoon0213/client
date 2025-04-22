@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- input#input$*5 -->
+    <input type="text" id="input1"> <button id="btn1">클릭</button><br>
+    <input type="text" id="input2"> <button id="btn2">클릭</button><br>
+    <input type="text" id="input3"> <button id="btn3">클릭</button><br>
+    <input type="text" id="input4"> <button id="btn4">클릭</button><br>
+    <input type="text" id="input5"> <button id="btn5">클릭</button><br>
+
+    <script>
+
+        document.querySelector("#btn1").addEventListener("click", function () {
+
+            let v1 = document.querySelector("#input1").value;
+            console.log(v1);
+        })
+
+
+        document.querySelector("#btn2").addEventListener("click", function () {
+
+            let v2 = document.querySelector("#input2").value;
+            console.log(v2);
+        })
+
+        document.querySelector("#btn3").addEventListener("click",function(){
+            document.querySelector("#input3").value = "다른 값으로 변경";
+        })
+
+        document.querySelector("#btn4").addEventListener("click",function(){
+            let v = document.querySelector("#input4").value;
+            document.querySelector("#input5").value = v;
+        
+            
+        })
+
+    </script>
+</body>
+
+</html>

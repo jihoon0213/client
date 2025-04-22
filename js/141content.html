@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        hello javaascript
+    </div>
+    <div id="box2">
+        hi 자바
+    </div>
+    <div id="box3"></div>
+    <div id="box4">
+        <h1>Lorem.</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+
+    <script>
+        let b1 = document.querySelector("#box1");
+        let c1 = b1.textContent;
+        console.log(c1);
+
+        b1.textContent = "안녕 자바스크립트";
+
+        console.log(document.querySelector("#box2").textContent);
+        
+        // innerHtml
+        let c4 = document.querySelector("#box4").innerHTML;
+        console.log(c4);
+        document.querySelector("#box4").innerHTML = "hello 바"
+
+        let content = "<h3>hello 새 콘텐츠 </h3>"
+        document.querySelector("#box5").textContent = content;
+        document.querySelector("#box6").innerHTML = content;
+        document.querySelector("#box7").innerText = content;
+        
+    </script>
+</body>
+</html>

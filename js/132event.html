@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+
+    <script>
+        let a = document.querySelector("#input1");
+        a.onfocus = () => console.log("포커스 얻음");
+        
+
+        a.onblur = () => console.log("잃음");
+        
+
+        let b = document.querySelector("#input2");
+        b.onfocus = () => console.log("포커스 얻음");
+        
+
+        b.onblur = () => console.log("잃음");
+    </script>
+</body>
+
+</html>

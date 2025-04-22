@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <input type="text" id="input1">
+            <button id="btn1">+</button>
+            <hr>
+            <ul id="list1"></ul>
+        </div>
+        <div style="flex: 1;">
+            <input type="text" id="input2">
+            <button id="btn2">+</button>
+            <hr>
+            <ul id="list2"></ul>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#btn1").addEventListener("click",function(){
+            let v = document.querySelector("#input1").value;
+            let l = document.createElement("li");
+            l.textContent = v;
+            document.querySelector("#list1").prepend(l);
+        })
+
+        document.querySelector("#btn2").addEventListener("click", function(){
+            let v = document.querySelector("#input2").value;
+            document.querySelector("#list2").innerHTML += `
+                <li>${v}</li>`;
+        })
+    </script>
+</body>
+
+</html>

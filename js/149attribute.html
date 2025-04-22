@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 500px;
+            height: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../html/호랑이.jpeg" alt="호랑이" id="img1" title="타이거">
+
+    <script>
+        let s1 = document.querySelector("#img1").getAttribute("src")
+        console.log(s1);
+
+        document.querySelector("#img1").setAttribute("src","../html/카피바라.jpeg");
+
+
+        let s2 = document.querySelector("#img1").src;
+        console.log(s2);
+
+        document.querySelector("#img1").src = "../html/강아지.jpeg";
+        
+    
+        document.querySelector("#img1").alt = "강아지"
+
+        document.querySelector("#img1").title = "멍멍이"
+    </script>
+</body>
+
+</html>

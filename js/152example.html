@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .line{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input1"><button id="btn1">+</button>
+    <hr>
+    <ul id="list1">
+        <li>asdf<button class="btn">완료</button> <button class="btn1">삭제</button></li><br>
+        <li>zxcv<button class="btn">완료</button> <button class="btn1">삭제</button></li>
+    </ul>
+
+    <script>
+    
+            let buttons = document.querySelectorAll(".btn");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", () => {
+                buttons[i].parentElement.classList.toggle("line");
+            })
+        }
+            let btns = document.querySelectorAll(".btn1")
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", () => {
+                    btns[i].parentElement.remove();
+                })
+                
+            }
+        
+        
+            
+            
+        
+    </script>
+</body>
+</html>

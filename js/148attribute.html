@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para1" class="note error" title="my paragraph">Lorem, ipsum dolor.</p>
+    <input type="text" id="input1" class="note" name="address" value="seoul">
+    <script>
+        let p = document.querySelector("#para1");
+        let i = p.getAttribute("id");
+        let c = p.getAttribute("class");
+        let t = p.getAttribute("title");
+        console.log(i, c, t);
+
+        let inp = document.querySelector("#input1");
+        console.log(inp.getAttribute("type"));
+        console.log(inp.getAttribute("value"));
+        console.log(inp.getAttribute("name"));
+
+        // setAttribute 값 변경하기
+        p.setAttribute("class", "special line");
+        p.setAttribute("title", "내가 만든 문단");
+
+        // input 요소의 class
+
+        let z = document.querySelector("#input1");
+        z.setAttribute("class", "another class")
+        z.setAttribute("value", "another value")
+        
+
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+    <button id="btn1">박스2에 추가</button>
+    <div id="box2"></div>
+
+    <hr>
+    <button id="btn2">1</button>
+    <button id="btn3">2</button>
+    <button id="btn4">3</button>
+    <button id="btn5">4</button>
+
+    <script>
+        let b1 = document.querySelector("#box1");
+        // 새 요소 만들기 createElement
+        let h = document.createElement("h1");
+        // 만든 새 요소 추가하기
+        b1.append(h);
+
+
+        let btn1 = document.querySelector("#btn1");
+        btn1.addEventListener("click", function(){
+            let p = document.createElement("P");
+            let b2 = document.querySelector("box2");
+            b2.append(p);
+        })
+
+    </script>
+</body>
+</html>

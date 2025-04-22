@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .done {
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list1">
+        <li>Lorem.<button>완료</button></li>
+        <li>Quam.<button>완료</button></li>
+        <li>Debitis.<button>완료</button></li>
+        <li>Nostrum.<button>완료</button></li>
+        <li>Totam!<button>완료</button></li>
+        <li>Beatae?<button>완료</button></li>
+        <li>Eos!<button>완료</button></li>
+        <li>Recusandae.<button>완료</button></li>
+        <li>Magnam!<button>완료</button></li>
+        <li>Accusantium!<button>완료</button></li>
+    </ul>
+
+    <script>
+        let buttons = document.querySelectorAll("button");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", () => {
+                buttons[i].parentElement.classList.toggle("done");
+            })
+            
+        }
+    </script>
+</body>
+
+</html>

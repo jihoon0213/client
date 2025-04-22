@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+
+    <script>
+        let b1 = document.querySelector("#btn1");
+        let b2 = document.querySelector("#btn2");
+        let b3 = document.querySelector("#btn3");
+
+        b1.onclick = () => console.log("1 버튼 클릭됨");
+
+        // b1버튼 클릭시 다른 일을 추가로 시키고 싶을 때
+        b1.onclick = function () {
+            console.log("1 버튼 클릭됨 2");
+        }
+
+        let fun1 = function(){
+            console.log("1 버튼 클릭됨 1");
+            
+        }
+        let fun2 = function(){
+            console.log("1 버튼 클릭됨 2");
+            
+        }
+
+        b1.onclick = function(){
+            fun1();
+            fun2();
+        }
+
+        b2.addEventListener("click",function(){
+            console.log("클릭 1");
+            
+        })
+        b2.addEventListener("click",function(){
+            console.log("클릭 2");
+            
+        })
+
+
+        b3.addEventListener("click",function(){
+            console.log("클릭 1");
+            
+        })
+        b3.addEventListener("click",function(){
+            console.log("클릭 2");
+            
+        })
+        b3.addEventListener("click",function(){
+            console.log("클릭 3");
+            
+        })
+    </script>
+</body>
+
+</html>

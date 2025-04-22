@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">Lorem.<button id="btn1">지우기</button></h1>
+    <h1 id="head2">Nostrum!<button id="btn2">지우기</button></h1>
+    <h1 id="head3">Nihil.<button id="btn3">지우기</button></h1>
+    <h1 id="head4">Nam?<button id="btn4">지우기</button></h1>
+    <h1 id="head5">Aliquid!<button id="btn5">지우기</button></h1>
+    <h1 id="head6">Incidunt?<button id="btn6">지우기</button></h1>
+    <h1 id="head7">Architecto!<button id="btn7">지우기</button></h1>
+    <h1 id="head8">Consectetur.<button id="btn8">지우기</button></h1>
+    <h1 id="head9">Non.<button id="btn9">지우기</button></h1>
+    <h1 id="head10">Possimus?<button id="btn10">지우기</button></h1>
+
+    <script>
+        let buttons = document.querySelectorAll("button");
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function(){
+                buttons[i].remove();
+            })
+            
+        }
+    </script>
+</body>
+</html>

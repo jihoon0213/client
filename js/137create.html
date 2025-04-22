@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">box에 마지막 자식 추가</button><br>
+    <button id="btn2">box에 첫번째 자식 추가</button><br>
+    <button id="btn3">box에 다음 형제 추가</button><br>
+    <button id="btn4">box에 이전 형제 추가</button>
+    <div id="box"></div>
+
+    <script>
+        document.querySelector("#btn1").addEventListener("click", function(){
+            let a = document.createElement("p");
+            document.querySelector("#box").append(elem);
+        });
+
+        document.querySelector("#btn2").addEventListener("click", function(){
+            let elem = document.createElement("p");
+            document.querySelector("#box").prepend(elem);
+        });
+
+        document.querySelector("#btn3").addEventListener("click", function(){
+            let elem = document.createElement("p");
+            document.querySelector("#box").after(elem);
+        });
+
+        document.querySelector("#btn4").addEventListener("click", function(){
+            let elem = document.createElement("p");
+            document.querySelector("#box").before(elem);
+        });
+
+    </script>
+</body>
+</html>
